@@ -142,12 +142,12 @@ If a location is a food desert, it should also output "This location is a food d
 <br>
 <br>
 >[!CAUTION]
->>Creating a List of Neighborhoods
+>Creating a List of Neighborhoods
 <h4>👉 Creating a List of Neighborhoods</h4>
 <p>To create a list of neighborhoods, you can create a vector of strings (to remember the name of the neighborhood). Then go through the list of stores: for each store, check to see if the neighborhood is already in the vector of strings. If it is, you don't need to do anything; if it's not you should add it to the end. Once you've done that with each store, you'll have a list of all the neighborhoods in the file. You can then work with one neighborhood at a time and count the number of large and small stores. For example, if the current neighborhood is Near West Side, go through the entire list of stores and, if you see one from the Near West Side, add it to the counts of the number of stores.</p>
 
 >[!CAUTION]
->>Sorting the List of Neighborhoods
+>Sorting the List of Neighborhoods
 <h4>👉 Sorting the List of Neighborhoods</h4>
 <p>Since we want to display the neighborhoods in order from the most stores to the least, we'll need to sort the list in some way. You may write your own sort, but you can also use the sort function that is in #include<algorithm>. The sort function can work with a vector, and sorts the objects using the < operator to determine which object goes first. So, if you create a Neighborhood class, you can write a < operator to determine whether one neighborhood should get displayed before another. To use the sort function, you call it with the beginning and end of the list (to tell it to sort the whole thing). If neighborhoods is our vector, we could call:</p>
 
