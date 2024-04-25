@@ -38,3 +38,105 @@ You may also want to use a neighborhood classes to keep track of the number of s
 >   5. Exit
 >Your choice:
 <p>The program should exit if the user chooses 5. Otherwise, the program should perform the appropriate task, and then return to the main menu. Each menu item is described below, along with example outputs.</p>
+<br>
+<h4>👉 General grocery stores Information</h4>
+<p>This option should show the number of grocery stores that were loaded from the file, followed by the number of large grocery stores. Lastly, it should list the average size of large grocery stores only including grocery stores for which the square footage is known. Show the average size with 1 digit after the decimal.</p>
+
+>[!TIP]
+>Your choice: 1<br>
+>Number of grocery stores: 40<br>
+>Number or large grocery stores: 19<br>
+>Average size of large grocery stores: 26067.3<br>
+
+<br>
+<h4>👉 Neighborhood Charts</h4>
+<p>This option should list each neighborhood, and list an L for each large store in the neighborhood, then an S for each small store. For example, Armour Square has one large store and four small stores, so it would have LSSSS. Stores should be listed in order of the number of stores, with the most stores first. If there are two neighborhoods with the same number of stores, list those neighborhoods in alphabetical order.</p>
+
+>[!TIP]
+>Your choice: 2<br>
+>WEST TOWN -----------> LLLLLLLSSSSSSS<br>
+>LOWER WEST SIDE -----> LLLLLSSSSSS<br>
+>NEAR WEST SIDE ------> LLLLLSSSS<br>
+>ARMOUR SQUARE -------> LSSS<br>
+>NEAR SOUTH SIDE -----> LS<br>
+
+<br>
+<h4>👉 Find Closest Stores</h4>
+<p>This option asks the user for a latitude and longitude, then finds the store that is closest to that point, and the large store that is closest to that point. The distance (with one digit after the decimal) as well as the name and address of the stores should be included in the message. If they are the same store, it should say "That is a large store." rather than repeating the same store's information. 
+
+If a location is a food desert, it should also output "This location is a food desert." A location is not a food desert if it is within half a mile of any store, or within one mile of a large store. It is a food desert if neither of those applies. (Note that since the file we're using in this demo only includes grocery stores fairly close to UIC, it may identify a location away from UIC to be a food desert, even though it's near a grocery store (just not near one that's in this file).</p>
+
+>[!TIP]
+>Your choice: 3<br>
+>Enter latitude: 41.8745212 <br>
+>Enter longitude: -87.6555109<br>
+>The closest store is 0.5 miles away.<br>
+>  ATHENS GROCERY is at 324 S HALSTED ST<br>
+>The closest large store is 0.6 miles away.<br>
+>  ARISTA FOODS is at 112 N MAY ST<br>
+<p>or</p>
+<br>
+
+>[!TIP]
+>Your choice: 3<br>
+>Enter latitude: 41.8656208<br>
+>Enter longitude: -87.6495758<br>
+>The closest store is 0.5 miles away.<br>
+>  DOMINICK'S #147/1147 is at 1340 S CANAL ST<br>
+>That is a large store.<br>
+<p>or</p>
+><br>
+
+>[!TIP]
+>Your choice: 3<br>
+>Enter latitude: 41.921707<br>
+>Enter longitude: -87.6362152<br>
+>The closest store is 1.5 miles away.<br>
+>  STANLEY'S is at 1558 N ELSTON AVE<br>
+>That is a large store.<br>
+>This location is a food desert.<br>
+
+<br>
+<h4>👉 Search for Store by Name</h4>
+<p>This option gives the user a chance to look for grocery stores by name. The program should allow the user to enter a word or phrase to search for, and output information about any store that contains that phrase in the name. If multiple stores have the search phrase, they should be listed in the order they were in the file. If no stores have that phrase, the program should display "No stores found."</p>
+
+>[!TIP]
+>Your choice: 4<br>
+>Enter store to search for: Dominick's<br>
+>Store: DOMINICK'S FINER FOODS - STORE # 2775<br>
+>Address: 2021 W CHICAGO AVE<br>
+>Community: WEST TOWN<br>
+>Size: Large<br>
+>Square Feet: 54963<br>
+>
+>Store: DOMINICK'S #147/1147<br>
+>Address: 1340 S CANAL ST<br>
+>Community: NEAR WEST SIDE<br>
+>Size: Large<br>
+>Square Feet: 68000<br>
+>
+>Store: DOMINICK'S #1875<br>
+>Address: 1 N HALSTED ST<br>
+>Community: NEAR WEST SIDE<br>
+>Size: Large<br>
+>Square Feet: 39000<br>
+<br>
+
+>[!TIP]
+>Your choice: 4<br>
+>Enter store to search for: Whole Foods<br>
+>Store: WHOLE FOODS MARKET<br>
+>Address: 1101 S CANAL ST<br>
+>Community: NEAR WEST SIDE<br>
+>Size: Large<br>
+>Square Feet: 11310<br>
+<br>
+
+>[!TIP]
+>Your choice: 4<br>
+>Enter store to search for: Toys<br>
+>No stores found.<br>
+
+
+
+
