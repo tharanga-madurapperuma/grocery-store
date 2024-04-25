@@ -141,11 +141,13 @@ If a location is a food desert, it should also output "This location is a food d
 <br>
 <br>
 <br>
+
 >[!CAUTION]
 >Creating a List of Neighborhoods
 <h4>👉 Creating a List of Neighborhoods</h4>
 <p>To create a list of neighborhoods, you can create a vector of strings (to remember the name of the neighborhood). Then go through the list of stores: for each store, check to see if the neighborhood is already in the vector of strings. If it is, you don't need to do anything; if it's not you should add it to the end. Once you've done that with each store, you'll have a list of all the neighborhoods in the file. You can then work with one neighborhood at a time and count the number of large and small stores. For example, if the current neighborhood is Near West Side, go through the entire list of stores and, if you see one from the Near West Side, add it to the counts of the number of stores.</p>
-
+<br>
+  
 >[!CAUTION]
 >Sorting the List of Neighborhoods
 <h4>👉 Sorting the List of Neighborhoods</h4>
